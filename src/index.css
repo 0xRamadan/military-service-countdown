@@ -1,13 +1,98 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App-logo {
+  height: 150px;
+}
+
+.App-header {
+  background-color: #7d1e6a;
+  padding: 20px;
+  color: white;
+}
+
+.App-header .title {
+  margin-top: 40px;
+}
+
+.App-header a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: 0.2s all;
+}
+.App-header a:hover {
+  opacity: 0.7;
+}
+
+.githubIcon {
+  height: 30px;
+  margin-right: 5px;
+}
+
+.Countdown {
+  padding-bottom: 20px;
+}
+
+.Countdown-col {
+  display: inline-block;
+}
+
+.Countdown-col-element {
+  display: inline-block;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Countdown-col-element strong {
+  font-size: 50px;
+}
+
+.player {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+  padding-bottom: 20px;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  justify-content: center;
+}
+
+@media screen and (max-width: 640px) {
+  .player {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.copyrightLink,
+.copyrightLink:hover,
+.copyrightLink:visited,
+.copyrightLink:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.textPrimary {
+  margin: 0;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.text-marginBottom {
+  margin-bottom: 0;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+.text-marginTop {
+  margin-top: 5px;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.whatever-text {
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
 }
