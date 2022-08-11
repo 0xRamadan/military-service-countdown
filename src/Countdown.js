@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import { Typography } from "@mui/material";
 
 class Countdown extends Component {
   constructor(props) {
@@ -82,36 +83,36 @@ class Countdown extends Component {
       <div className="Countdown" >
         <span className="Countdown-col">
           <span className="Countdown-col-element">
-            <strong>{this.addLeadingZeros(countDown.years)}</strong>
-            <span>{countDown.years === 1 ? "Year" : "Years"}</span>
+            <Typography variant="h4" fontWeight='bold'>{this.addLeadingZeros(countDown.years)}</Typography>
+            <Typography>{countDown.years === 1 ? "Year" : "Years"}</Typography>
           </span>
         </span>
 
         <span className="Countdown-col">
           <span className="Countdown-col-element">
-            <strong>{this.addLeadingZeros(countDown.days)}</strong>
-            <span>{countDown.days === 1 ? "Day" : "Days"}</span>
+            <Typography variant="h4" fontWeight='bold' >{this.addLeadingZeros(countDown.days)}</Typography>
+            <Typography>{countDown.days === 1 ? "Day" : "Days"}</Typography>
           </span>
         </span>
 
         <span className="Countdown-col">
           <span className="Countdown-col-element">
-            <strong>{this.addLeadingZeros(countDown.hours)}</strong>
-            <span>Hours</span>
+            <Typography variant="h4" fontWeight='bold' >{this.addLeadingZeros(countDown.hours)}</Typography>
+            <Typography>Hours</Typography>
           </span>
         </span>
 
         <span className="Countdown-col">
           <span className="Countdown-col-element">
-            <strong>{this.addLeadingZeros(countDown.min)}</strong>
-            <span>Min</span>
+            <Typography variant="h4" fontWeight='bold' >{this.addLeadingZeros(countDown.min)}</Typography>
+            <Typography>Min</Typography>
           </span>
         </span>
 
         <span className="Countdown-col">
           <span className="Countdown-col-element">
-            <strong>{this.addLeadingZeros(countDown.sec)}</strong>
-            <span>Sec</span>
+            <Typography variant="h4" fontWeight='bold' >{this.addLeadingZeros(countDown.sec)}</Typography>
+            <Typography>Sec</Typography>
           </span>
         </span>
       </div>

@@ -1,0 +1,49 @@
+.titleCover {
+  margin: 12px;
+  background-image: url("./images/cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  position: relative;
+  height: 600px;
+  border-radius: 25px;
+}
+
+.titleText {
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 12px 15px rgba(0, 0, 0, 0.3);
+}
+
+.image {
+  max-width: 400px;
+  max-height: 250px;
+  border-radius: 25px;
+  box-shadow: 4px 4px #6c757d;
+}
+
+@media (max-width: 600px) {
+  .image {
+    max-width: 300px;
+    box-shadow: 3px 3px #6c757d;
+  }
+}
+
+@media (max-width: 420px) {
+  .image {
+    max-width: 270px;
+    box-shadow: 2px 2px #6c757d;
+  }
+}
+
+@media (max-width: 350px) {
+  .image {
+    max-width: 220px;
+    box-shadow: 1px 1px #6c757d;
+  }
+}
