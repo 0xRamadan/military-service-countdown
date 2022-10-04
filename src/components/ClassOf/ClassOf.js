@@ -1,8 +1,7 @@
 import { Typography, Box} from "@mui/material";
-import classes from './ClassOf.module.css'
 import Countdown from "../../Countdown";
 
-const ClassOf = ({ nameOfClass, countdownDate, image1, image2, bgColor1 }) => {
+const ClassOf = ({ nameOfClass, countdownDate, bgColor1 }) => {
     return (
         < Box
             sx={{
@@ -10,15 +9,14 @@ const ClassOf = ({ nameOfClass, countdownDate, image1, image2, bgColor1 }) => {
                 flexDirection: { xs: 'column', lg: 'row' },
                 justifyContent: 'space-evenly',
                 alignItems: 'center',
+                m: 'auto',
+                maxWidth: '600px',
                 bgcolor: bgColor1,
-                gap: '20px',
                 borderRadius: 5,
-                m: 4,
-                p: 4,
+                p: {xs: 1, sm: 4, xl: 5},
             }
             }
         >
-            <img src={image1} alt='d1' className={classes.image} />
             <Box sx={{
                 display: 'flex',
                 flexDirection: 'column',
@@ -26,10 +24,9 @@ const ClassOf = ({ nameOfClass, countdownDate, image1, image2, bgColor1 }) => {
                 color: '#fff',
                 textShadow: '0 2px 3px rgba(0, 0, 0, 0.3)'
             }}>
-                <Typography variant="h4" fontWeight='bold'>{nameOfClass}</Typography>
+                <Typography variant="h4" fontWeight='bold' sx={{mb: 1}}>{nameOfClass}</Typography>
                 <Countdown date={`${countdownDate}`}/>
             </Box>
-            <img src={image2} alt='d11' className={classes.image} />
         </ Box>
     )
 }

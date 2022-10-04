@@ -80,7 +80,7 @@ class Countdown extends Component {
   render() {
     const countDown = this.state;
     return (
-      <div className="Countdown" >
+      <div sx={{display: 'flex', flexWrap: 'wrap'}}>
         <span className="Countdown-col">
           <span className="Countdown-col-element">
             <Typography variant="h4" fontWeight='bold'>{this.addLeadingZeros(countDown.years)}</Typography>

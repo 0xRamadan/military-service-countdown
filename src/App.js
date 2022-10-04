@@ -1,23 +1,26 @@
-import { Typography, Box, Container } from "@mui/material";
-import Footer from './components/Footer'
+import { Typography, Box } from "@mui/material";
 import ReactPlayer from 'react-player'
-import classes from './App.module.css'
-import d1 from './images/d1.jpg'
-import d11 from './images/d11.jpg'
-import d2 from './images/d2.png'
-import d22 from './images/d22.jpg'
+
+// import custom component
 import ClassOf from "./components/ClassOf/ClassOf.js";
+import Footer from './components/Footer'
+import GalleryPagination from "./components/GalleryPagination/GalleryPagination";
 
 
 
 function App() {
   return (
     <Box>
-      <Container className={classes.titleCover}>
-        <Typography className={classes.titleText} variant="h3" fontWeight='bold'>Military Service Countdown</Typography>
-      </Container>
-      <ClassOf nameOfClass='دفعة أولي' countdownDate='2023-12-01T16:00:00' image1={d1} image2={d11} bgColor1='#273E47' />
-      <ClassOf nameOfClass='دفعة تانية' countdownDate='2024-03-01T16:00:00' image1={d2} image2={d22} bgColor1='#233329' />
+      <GalleryPagination />
+      <Box sx={{
+        display: 'flex', 
+        flexDirection: 'column',
+        m: 4,
+        gap: 4
+      }}>
+        <ClassOf nameOfClass='دفعة أولي' countdownDate='2023-12-01T16:00:00' bgColor1='#273E47' />
+        <ClassOf nameOfClass='دفعة تانية' countdownDate='2024-03-01T16:00:00' bgColor1='#233329' />
+      </Box>
       {/* لكل من لم يلتحق بالخدمة العسكرية */}
       <Box sx={{ m: 4 }}>
         <Typography textAlign='center' variant='h4' fontWeight='bold' color='white' >رسالة لل مخدمش جيش</Typography>
