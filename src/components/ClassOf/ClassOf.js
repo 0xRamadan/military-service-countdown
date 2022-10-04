@@ -2,7 +2,7 @@ import { Typography, Box} from "@mui/material";
 import classes from './ClassOf.module.css'
 import Countdown from "../../Countdown";
 
-const ClassOf = ({ nameOfClass, countdownDate, image1, image2, bgColor1, bgColor2 }) => {
+const ClassOf = ({ nameOfClass, countdownDate, image1, image2, bgColor1 }) => {
     return (
         < Box
             sx={{
@@ -13,7 +13,6 @@ const ClassOf = ({ nameOfClass, countdownDate, image1, image2, bgColor1, bgColor
                 bgcolor: bgColor1,
                 gap: '20px',
                 borderRadius: 5,
-                boxShadow: `3px 3px ${bgColor2}`,
                 m: 4,
                 p: 4,
             }
