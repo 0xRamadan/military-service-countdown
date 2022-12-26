@@ -9,7 +9,6 @@ import class2 from "../../assets/d1.jpg"
 import class3 from "../../assets/d11.jpg"
 import class4 from "../../assets/d2.png"
 import class5 from "../../assets/d22.jpg"
-import class6 from "../../assets/d3.jpg"
 
 
 
@@ -29,16 +28,13 @@ const images = [
     {
         original: class5,
     },
-    {
-        original: class6,
-    },
 ];
 
 const GalleryPagination = () => {
     return (
         <Container sx={{ p: 3 }}>
             <Typography align='center' sx={{ mb: 2 }} color="white" variant="h3">Military Service Countdown</Typography>
-            <Typography align='center' sx={{ mb: 2 }} color="white">يارب صبرنا علي البلاء الل احنا فيه</Typography>
+            <Typography align='center' sx={{ mb: 2 }} color="white" variant="h4"> 🥰بنعد الليالي في حبك يا مصــــــر</Typography>
             <ImageGallery showPlayButton={false} showBullets={true} autoPlay={true} showNav={false} items={images} />
         </Container>
     )

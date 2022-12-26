@@ -1,7 +1,7 @@
 import { Typography, Box} from "@mui/material";
 import Countdown from "../../Countdown";
 
-const ClassOf = ({ nameOfClass, countdownDate, bgColor1 }) => {
+const ClassOf = ({ nameOfClass, countdownDate, subTitle, bgColor1 }) => {
     return (
         < Box
             sx={{
@@ -25,6 +25,7 @@ const ClassOf = ({ nameOfClass, countdownDate, bgColor1 }) => {
                 textShadow: '0 2px 3px rgba(0, 0, 0, 0.3)'
             }}>
                 <Typography variant="h4" fontWeight='bold' sx={{mb: 1}}>{nameOfClass}</Typography>
+                <Typography  variant="h5" sx={{mb: 1}}>{subTitle}</Typography>
                 <Countdown date={`${countdownDate}`}/>
             </Box>
         </ Box>
